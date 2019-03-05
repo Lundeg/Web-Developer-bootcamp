@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM Demo</title>
+    <style>
+    .big {
+        font-size: 100px;
+        color: orange;
+        border: 5px solid red;
+    }
+    </style>
+</head>
+<body>
+    <h1>Welcome to MY DOM Demo</h1>
+    <p>Corgi mixes are <strong>super</strong> adorable</p>
+
+    <img src="https://barrelhorseworld.com/dogs/images/1145556d.jpg">
+	<img src="https://static.boredpanda.com/blog/wp-content/uploads/2017/05/corgi-mix-cross-breeds-18-591c39272d49f__605.jpg">
+
+    <a href="http://www.google.com">LINK TO GOOGLE</a>
+    <ul>
+        <li>Orchids</li>
+        <li>Succulents</li>
+        <li>Tulips</li>
+    </ul>
+    <script>
+    // var tag = document.querySelector("p");
+    //     tag.classList.add("big");
+
+    var p = document.querySelector("p");
+    p.textContent = "Corgi mixes really really super adorable";
+
+    var ul = document.querySelector("ul");
+
+    //change src setattribute
+    let img = document.getElementsByTagName("img")[0];
+    img.setAttribute("src","https://barrelhorseworld.com/dogs/images/1145819e.jpg");
+
+    //change href setAttribute
+    let link = document.querySelector("a");
+    link.setAttribute("href","http://www.youtube.com");
+    </script>
+
+
+</body>
+
+
+</html>
