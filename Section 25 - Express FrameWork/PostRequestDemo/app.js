@@ -18,8 +18,8 @@ app.get('/friends', function(req,res){
 
 
 app.post('/addFriend', function(req,res){
-    console.log(req.body);
-    console.log(req.body.newFriend);
+   // console.log(req.body);
+   // console.log(req.body.newFriend);
 
     var newFriend = req.body.newFriend;
     friends.push(newFriend);
