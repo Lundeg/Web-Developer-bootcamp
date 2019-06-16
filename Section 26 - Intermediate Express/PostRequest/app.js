@@ -19,5 +19,4 @@ app.post("/addfriend",(req,res)=>{
     res.redirect("/friends");
 });
 
-app.listen(3000,()=>{console.log("Starting server")
-});
+app.listen(3000,()=>{console.log("Starting server")});
